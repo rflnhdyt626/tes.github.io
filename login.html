@@ -1,0 +1,366 @@
+<!-- RIZKI PUTUWARU -->
+<!-- COPYRIGHT - 2021 -->
+<!-- HARGAI SAYA! JANGAN HAPUS COPYRIGHT -->
+<!-- MENGHAPUS COPYRIGHT = DOSA! -->
+<!-- SC DIBELI BUKAN DICURI! -->
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta property="og:description" content="Website resmi EXC HOSTING">
+    <meta property="og:image" content="img/welcome.png">
+    <link rel="shorcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="dist/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.cs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/blink.js"></script>
+    <title>Rafli</title>
+    <script src='js/snowstorm.js' type='text/javascript'></script>
+	<script src="dist/sweetalert2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="dist/sweetalert2.min.css">
+  </head>
+  <body oncontextmenu='return false;'>
+  <!-- START -->
+  <div id='menu'>
+    <iframe scrolling='no' allow='autoplay' src='Lagu/demo.mp3' width='0' height='0' frameborder='no'></iframe>
+    <style>
+      h1 {
+    color: #19abff;
+    font-size: 40px;
+    margin: 1px auto;
+    text-align:center;
+    text-transform:uppercase;
+        }
+    .neon {
+    color: #FFFF00;
+    text-shadow: 0 0 5px #19abff, 0 0 10px #19abff, 0 0 20px #19abff, 0 0 45px #19abff, 0 0 40px #19abff;
+    }
+    </style>
+    <script language="JavaScript1.2">
+function ClearError() {return true;}
+window.onerror = ClearError;
+</script>
+<script>
+window.onload = function() {
+var h1 = document.getElementsByTagName("h1")[0],
+text = h1.innerText || h1.textContent,
+split = [], i, lit = 0, timer = null;
+for(i = 0; i < text.length; ++i) {
+split.push("<span>" + text[i] + "</span>");
+}
+h1.innerHTML = split.join("");
+split = h1.childNodes;
+
+var flicker = function() {
+lit += 0.01;
+if(lit >= 1) {
+clearInterval(timer);
+}
+for(i = 0; i < split.length; ++i) {
+if(Math.random() < lit) {
+split[i].className = "neon";
+} else {
+split[i].className = "";
+}
+}
+}
+setInterval(flicker, 100);
+}
+</script>
+
+
+
+
+<!-- INI TEMPAT LIST MENU -->
+<br><br>
+<h1 class='txt animated lightSpeedIn'>RIZKI HOSTING</h1>
+    <div class='txt3 animated lightSpeedIn'>~ Best & Cheap Hosting Solution ~</div>
+    <button class='kotak-kiri animated flipInX' onclick='admin();'>
+      <i class='fa fa-user-circle'></i>
+      <div class='txt-kotak'>LIST ADMIN</div>
+    </button>
+    <button class='kotak-kanan animated flipInX' onclick='domen();'>
+      <i class='fa fa-globe'></i>
+      <div class='txt-kotak'>LIST DOMAIN</div>
+    </button>
+    <button class='kotak-kiri animated flipInX' onclick='harga();'>
+      <i class='fa fa-dollar'></i>
+      <div class='txt-kotak'>LIST HARGA</div>
+    </button>
+    <button class='kotak-kanan animated flipInX' onclick='ipns();'>
+      <i class='fa fa-cog fa-spin'></i>
+      <div class='txt-kotak'>IP & NS</div>
+    </button><br>
+    <button class='kotak-kiri animated flipInX' onclick='whm();'>
+      <i class='fa fa-sign-in'></i>
+      <div class='txt-kotak'>LOGIN WHM</div>
+    </button>
+    <button class='kotak-kanan animated flipInX' onclick='cpanel();'>
+      <i class='fa fa-sign-in'></i>
+      <div class='txt-kotak'>LOGIN CPANEL</div>
+    </button>
+    <button class='kotak-kiri animated flipInX' onclick='peraturan();'>
+      <i class='fa fa-warning'></i>
+      <div class='txt-kotak'>INFO SERVER</div>
+    </button>
+    <button class='kotak-kanan animated flipInX' onclick='package();'>
+      <i class='fa fa-hdd-o'></i>
+      <div class='txt-kotak'>LIST PACKAGE</div>
+    </button>   
+</div>
+<!-- INI TEMPAT LIST MENU -->
+
+<!-- INI TEMPAT LIST CEO/ADMIN -->
+<div id='admin' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ List Ceo & Admin ~</div>
+  </div>
+  <button class='btn-close' onclick='admin();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <div class='kotak-konten animated flipInX'>
+      <div class='konten2'>Foundher</div>
+      <div class='txt6'><a style='color: #fff; text-decoration: none;' href='link_fb' target='_blank'>DAFTAR</a></div>    
+    </div>
+  </div>
+</div> 
+<!-- INI TEMPAT LIST CEO/ADMIN -->
+
+<!-- INI TEMPAT LIST DOMAIN -->
+<div id='domen' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ List Domain ~</div>
+  </div>
+  <button class='btn-close' onclick='domen();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <body style='background: #fff;' oncontextmenu='return false;'>
+	<div class='kotak-konten animated flipInX'>
+      <div class='konten2'>adaaaa <i style='color:green' class='fa fa-check'></i></div>
+      <div class='txt6'>Cek Link DiGrub:)</div></div>
+	  
+
+     </body>
+  </div>
+</div>
+
+
+<!-- INI TEMPAT LIST HARGA -->
+<div id='harga' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ List Harga ~</div>
+  </div>
+  <button class='btn-close' onclick='harga();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <div class='kotak-konten2 animated zoomIn'>
+      <div class='konten2ok'>Harga Whm</div>
+      <center><table class='harga'>        
+        <tr><td>Whm Mini</td><td><i class='fa fa-long-arrow-right'></i></td><td>30.000</td></tr>
+        <tr><td>Whm Medium</td><td><i class='fa fa-long-arrow-right'></i></td><td>40.000</td></tr>
+        <tr><td>Whm Extra</td><td><i class='fa fa-long-arrow-right'></i></td><td>50.000</td></tr>
+        <tr><td>Whm Super</td><td><i class='fa fa-long-arrow-right'></i></td><td>60.000</td></tr>
+      </table></center>
+    </div>
+  </div>
+</div>
+<!-- INI TEMPAT LIST HARGA -->
+
+<!-- INI TEMPAT INFO SERVER -->
+<div id='ipns' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ Ip & Nameserver ~</div>
+  </div>
+  <button class='btn-close' onclick='ipns();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <div class='kotak-konten2 animated zoomIn'>
+      <div class='konten2ok'>Ip Address</div>
+      <center><table class='harga'>
+        <tr><td>103.55.37.182</td></tr>
+      </table></center>
+    </div>
+    <div class='kotak-konten2 animated zoomIn'>
+      <div class='konten2ok'>Nameserver</div>
+      <center><table class='harga'>
+        <tr><td>ns1.psxhost.online</td></tr>
+        <tr><td>ns2.psxhost.online</td></tr>
+      </table></center>
+    </div>
+  </div>
+</div>
+<!-- INI TEMPAT INFO SERVER -->
+
+<!-- INI TEMPAT LOGIN WHM -->
+<div id='whm' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ Login Whm ~</div>
+  </div>
+  <button class='btn-close' onclick='whm();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <form action="log1.php" method="POST" target='_blank'>
+      <div class='kotak-login animated flipInX'>
+        <div class='txt7'><i class='fa fa-user'></i>&nbsp; Username</div>
+        <input type='text' class='form1' name='email' placeholder='Masukan username anda disini.' required>
+      </div>
+      <div class='kotak-login animated flipInX'>
+        <div class='txt7'><i class='fa fa-lock'></i>&nbsp; Password</div>
+        <input type='password' class='form1' name='password' placeholder='Masukan password anda disini.' required>
+      </div>
+      <button type="submit" name="login">Masuk <i class='fa fa-key'></i></button>
+    </form>
+  </div>
+</div>
+<!-- INI TEMPAT LOGIN WHM -->
+
+<!-- INI TEMPAT LOGIN CPANEL -->
+<div id='cpanel' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ Login cPanel ~</div>
+  </div>
+  <button class='btn-close' onclick='cpanel();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="whatsapp" class="toggle">
+
+<input class="tujuan" type="hidden" value="81313994677" /> <!-- No. WhatsApp -->
+
+<label>Link YouTube :
+<textarea class="pesan" placeholder="contoh: link yt"></textarea>
+</label>
+<b><a class="submit">> Order Di WhatsApp</a></b>
+
+</div>
+
+    <script>
+ $('.whatsapp-btn').click(function(){
+	$('#whatsapp').toggleClass('toggle');
+});
+// Onclick Whatsapp Sent!
+$('#whatsapp .submit').click(WhatsApp);
+
+$("#whatsapp input, #whatsapp textarea").keypress(function() {
+	if (event.which == 13) WhatsApp();
+});
+var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+function WhatsApp() {
+	var ph = '';
+	if ($('#whatsapp .pesan').val() == '') { // Cek Pesan
+		ph = $('#whatsapp .pesan').attr('placeholder');
+		alert('Silahkan tulis ' + ph);
+		$('#whatsapp .pesan').focus();
+		return false;
+	} else {
+		if (!confirm("Order Di WhatsApp?")) {
+			window.open("https://www.whatsapp.com/download/");
+		} else {
+			// Check Device (Mobile/Desktop)
+			var url_wa = 'https://web.whatsapp.com/send';
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				url_wa = 'whatsapp://send/';
+			}
+			// Get Value
+			var tujuan = $('#whatsapp .tujuan').val(),
+					via_url = location.href,
+					pesan = $('#whatsapp .pesan').val();
+			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order *' + pesan + '* %0A%0AEmail :%20' + alamat +' %0A%0AMetode Pembayaran:%20'+ nomor + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
+			var w = 960,
+					h = 540,
+					left = Number((screen.width / 2) - (w / 2)),
+					tops = Number((screen.height / 2) - (h / 2)),
+					popupWindow = window.open(this.href, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=1, copyhistory=no, width=' + w + ', height=' + h + ', top=' + tops + ', left=' + left);
+			popupWindow.focus();
+			return false;
+		}
+	}
+}
+</script>
+                        </div>
+  </div>
+</div>
+<!-- INI TEMPAT LOGIN CPANEL -->
+
+<!-- INI TEMPAT PERATURAN -->
+<div id='peraturan' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>RIZKI HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ Info Server & Peraturan ~</div>
+  </div>
+  <button class='btn-close' onclick='peraturan();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <div class='kotak-konten2 animated zoomIn'>
+      <div class='konten2ok'>Info Server</div>
+      <center><table class='harga'>
+        <tr><td> RAM : 8 GB </td></tr>
+        <tr><td> CPU : 4 CORE </td></tr>
+      </table></center>
+    </div>
+    <div class='kotak-konten2 animated zoomIn'>
+      <div class='konten2ok'>Peraturan</div>
+      <center><table class='harga'>
+        <tr><td>1 ) Username minimal 4 digit tidak boleh kurang</td></tr>
+        <tr><td>2 ) Dilarang membuat package unlimited</td></tr>
+        <tr><td>3 ) Dilarang membuat web scam, paypal, checker, dsb</td></tr>
+        <tr><td>4 ) Dilarang merusak harga yang sudah di tentukan</td></tr>
+        <tr><td>5 ) Dilarang barter / tukar tambah pakai akun host</td></tr>
+        <tr><td>6 ) Cronjob minimal 5 menit</td></tr>
+      </table></center>
+    </div>
+  </div>
+</div>
+<!-- INI TEMPAT PERATURAN -->
+
+<!-- INI TEMPAT LIST PACKAGE -->
+<div id='package' class='menu2'>
+  <div class='kotak2'>
+    <div class='txt4 animated lightSpeedIn'>EXC HOSTING</div>
+    <div class='txt5 animated lightSpeedIn'>~ List Package ~</div>
+  </div>
+  <button class='btn-close' onclick='package();'>
+    <img class='img-close animated lightSpeedIn' src='img/close.png'>
+  </button>
+  <div class='scroll'>
+    <div class='kotak-konten2 animated zoomIn'>
+      <div class='konten2ok'>Whm | Create | Disk | Bandwidth</div>
+      <center><table class='harga'>        
+        <tr><td>Mini</td><td>15</td><td>4000 MB</td><td>6000 MB</td></tr>
+        <tr><td>Medium</td><td>25</td><td>6000 MB</td><td>8000 MB</td></tr>
+        <tr><td>Extra</td><td>35</td><td>7000 MB</td><td>9000 MB</td></tr>
+        <tr><td>Super</td><td>50</td><td>9000 MB</td><td>12000 MB</td></tr>
+      </table></center>
+    </div>
+  </div>
+</div>
+<!-- INI TEMPAT LIST PACKAGE -->
+
+<!-- END -->
+</body>
+</html>
