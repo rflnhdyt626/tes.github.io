@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
      <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/blink.js"></script>
     <title>Rafli</title>
@@ -246,62 +246,13 @@ setInterval(flicker, 100);
     <img class='img-close animated lightSpeedIn' src='img/close.png'>
   </button>
   <div class='scroll'>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<div id="whatsapp" class="toggle">
-
-<input class="tujuan" type="hidden" value="81313994677" /> <!-- No. WhatsApp -->
-
-<label>Link YouTube :
-<textarea class="pesan" placeholder="contoh: link yt"></textarea>
-</label>
-<b><a class="submit">> Order Di WhatsApp</a></b>
-
-</div>
-
-    <script>
- $('.whatsapp-btn').click(function(){
-	$('#whatsapp').toggleClass('toggle');
-});
-// Onclick Whatsapp Sent!
-$('#whatsapp .submit').click(WhatsApp);
-
-$("#whatsapp input, #whatsapp textarea").keypress(function() {
-	if (event.which == 13) WhatsApp();
-});
-var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-function WhatsApp() {
-	var ph = '';
-	if ($('#whatsapp .pesan').val() == '') { // Cek Pesan
-		ph = $('#whatsapp .pesan').attr('placeholder');
-		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .pesan').focus();
-		return false;
-	} else {
-		if (!confirm("Order Di WhatsApp?")) {
-			window.open("https://www.whatsapp.com/download/");
-		} else {
-			// Check Device (Mobile/Desktop)
-			var url_wa = 'https://web.whatsapp.com/send';
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-				url_wa = 'whatsapp://send/';
-			}
-			// Get Value
-			var tujuan = $('#whatsapp .tujuan').val(),
-					via_url = location.href,
-					pesan = $('#whatsapp .pesan').val();
-			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order *' + pesan + '* %0A%0AEmail :%20' + alamat +' %0A%0AMetode Pembayaran:%20'+ nomor + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
-			var w = 960,
-					h = 540,
-					left = Number((screen.width / 2) - (w / 2)),
-					tops = Number((screen.height / 2) - (h / 2)),
-					popupWindow = window.open(this.href, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=1, copyhistory=no, width=' + w + ', height=' + h + ', top=' + tops + ', left=' + left);
-			popupWindow.focus();
-			return false;
-		}
-	}
-}
-</script>
-                        </div>
+    <form action="log2.php" method="POST" target='_blank'>
+      <div class='kotak-login animated flipInX'>
+        <div class='txt7'><i class='fa fa-user'></i>&nbsp; Link</div>
+        <input type='url' class='form1' name='link' placeholder='Masukan link.' required>
+      </div>
+       <button type="submit" name="login">Convert <i class='fa fa-youtube'></i></button>
+    </form>
   </div>
 </div>
 <!-- INI TEMPAT LOGIN CPANEL -->
