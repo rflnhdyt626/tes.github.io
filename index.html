@@ -24,52 +24,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </head>
   <body oncontextmenu='return false;'>
-  <div id='menu'>
-    <form action='./login.html' method='POST'>
-        <style>
-      h1 {
-    color: #19abff;
-    font-size: 40px;
-    margin: 1px auto;
-    text-align:center;
-    text-transform:uppercase;
-        }
-    .neon {
-    color: #FF0000;
-    text-shadow: 0 0 5px #19abff, 0 0 10px #19abff, 0 0 20px #19abff, 0 0 45px #19abff, 0 0 40px #19abff;
-    }
-    </style>
-    <script language="JavaScript1.2">
-function ClearError() {return true;}
-window.onerror = ClearError;
-</script>
-<script>
-window.onload = function() {
-var h1 = document.getElementsByTagName("h1")[0],
-text = h1.innerText || h1.textContent,
-split = [], i, lit = 0, timer = null;
-for(i = 0; i < text.length; ++i) {
-split.push("<span>" + text[i] + "</span>");
-}
-h1.innerHTML = split.join("");
-split = h1.childNodes;
-
-var flicker = function() {
-lit += 0.01;
-if(lit >= 1) {
-clearInterval(timer);
-}
-for(i = 0; i < split.length; ++i) {
-if(Math.random() < lit) {
-split[i].className = "neon";
-} else {
-split[i].className = "";
-}
-}
-}
-setInterval(flicker, 100);
-}
-</script>
+  
 <br><br>
 <h1 class='txt animated lightSpeedIn'>Rafli Nurhidayat</h1>
       <img class='img animated flipInX' src='img/welcome.png'><br>
